@@ -11,10 +11,10 @@ a {
   text-decoration: none;
 }
 
-.featured-stories::before,
 .categories-01::before,
 .debate::before,
 .editors-pick::before,
+.featured-stories::before,
 .footer::before,
 .in-the-magazine::before,
 .more-stories::before,
@@ -47,6 +47,23 @@ a {
   border-left: 12px solid #fff;
   border-top: 13px solid #dc3545;
   width: 100px;
+}
+
+.newsweek-logo {
+  transition: transform 0.5s linear;
+}
+
+.newsweek-logo:hover {
+  transform: rotate(360deg);
+}
+
+.search-bar {
+  width: 25%;
+  transition: width 1s ease-in-out;
+}
+
+.search-bar:focus {
+  width: 100%;
 }
 
 /* Main */
@@ -129,10 +146,10 @@ a {
 
 /* Media Queries */
 @media (min-width: 768px) {
-  .featured-stories::before,
-.categories-01::before,
+  .categories-01::before,
 .debate::before,
 .editors-pick::before,
+.featured-stories::before,
 .footer::before,
 .in-the-magazine::before,
 .more-stories::before,
@@ -149,7 +166,7 @@ a {
   }
 
   .subscribe-box {
-    padding: 14px 30px 30px 30px;
+    padding: 14px 30px 30px;
   }
 
   .info-text {
@@ -185,6 +202,21 @@ a {
   }
   .newsletter .input-group .form-control {
     width: 100%;
+  }
+
+  .nav-before li {
+    background-color: #fff;
+    transition: all 1s ease-out;
+  }
+  .nav-before li a {
+    color: #333;
+    transition: all 1s ease-out;
+  }
+  .nav-before li a:hover {
+    color: #f72210;
+  }
+  .nav-before li:hover {
+    background-color: #f4f5f6;
   }
 }
 
